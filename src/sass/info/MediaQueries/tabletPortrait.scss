@@ -1,0 +1,20 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+      .container, .head .container {
+        max-width: 480px !important;
+      }
+      .head {
+        min-height: inherit;
+      }
+      .registration .registration-form {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .modal .registration-form {
+       padding: 60px; 
+      }
+	}
+}
